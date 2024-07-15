@@ -48,6 +48,7 @@
             transition: filter 0.3s ease-in-out; /* Необязательно: плавный переход эффекта */
             filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7)); /* Настройка цвета и размера свечения */
             transition: filter 0.3s ease-in-out; /* Необязательно: плавный переход эффекта */
+
         }
         .header h1:hover{
             filter: drop-shadow(0 0 20px rgba(112, 12, 98, 1)); /* Настройка свечения при наведении */
@@ -81,13 +82,18 @@
             text-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
 
 
+
         }
 
         .setting {
             width: 5%;
-            margin-left: 72%;
+            margin-left: 90%;
             filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7)); /* Настройка цвета и размера свечения */
             transition: filter 0.3s ease-in-out; /* Необязательно: плавный переход эффекта */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
         }
         .setting:hover {
             filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1)); /* Настройка свечения при наведении */
@@ -144,7 +150,10 @@
 <div class="header">
     <img src="logos.png" alt="Логотип" class="logo" style="vertical-align: middle;">
     <h1 style="text-shadow: 0 0 30px rgba(112, 12, 98, 0.8);">FunSpace</h1>
-    <img src="setti.png" alt="Настройки" class="setting" style="vertical-align: middle;">
+    <img src="setti.png" alt="Настройки" class="setting" style="vertical-align: center;">
+</div>
+<div class="content">
+
 </div>
 
 
