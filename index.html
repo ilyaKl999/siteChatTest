@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top right, #00243e, #700c62);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0; /* Убираем отступы по умолчанию */
+            padding: 0; /* Убираем отступы по умолчанию */
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        html, body {
+            height: 100%; /* Убедитесь, что html и body занимают 100% высоты */
+            width: 100%;
+        }
+        .header {
+            width: 100%;
+            height: 10%;
+            background-color: rgba(4, 2, 24, 0.9); /* Цвет с прозрачностью */
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Выравнивание по правому краю */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Чтобы шапка была поверх других элементов */
+            font-family: 'Archivo Black', sans-serif;
+            border-bottom-left-radius: 3em; /* Скругление левого нижнего угла */
+            border-bottom-right-radius: 3em; /* Скругление правого нижнего угла */
+        }
+
+
+        .header h1 {
+            margin-left: 0%; /* Дополнительный отступ справа для текста */
+            font-size: 250%; /* Базовый размер шрифта в процентах */
+            transition: filter 0.3s ease-in-out; /* Необязательно: плавный переход эффекта */
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7)); /* Настройка цвета и размера свечения */
+            transition: filter 0.3s ease-in-out; /* Необязательно: плавный переход эффекта */
+        }
+        .header h1:hover{
+            filter: drop-shadow(0 0 20px rgba(112, 12, 98, 1)); /* Настройка свечения при наведении */
+
+
+        }
+
+
+        .logo {
+            width: 7%;
+            margin-left: 1%;
+            margin-top: 0.4%;
+
+        }
+        .footer {
+            width: 100%;
+            height: 15%;
+            background-color: rgba(4, 2, 24, 0.9); /* Цвет с прозрачностью */
+            color: #fff; /* Цвет текста футера */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            border-top-left-radius: 3em;
+            border-top-right-radius: 3em;
+        }
+        .footer h1{
+            margin-left: 3%;
+            text-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
+
+
+        }
+
+        .setting {
+            width: 5%;
+            margin-left: 72%;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7)); /* Настройка цвета и размера свечения */
+            transition: filter 0.3s ease-in-out; /* Необязательно: плавный переход эффекта */
+        }
+        .setting:hover {
+            filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1)); /* Настройка свечения при наведении */
+        }
+        .star{
+            width: 6%;
+            margin-left: 4%;
+            filter: drop-shadow(0 0 20px rgba(250, 220, 100, 0.7)); /* Настройка свечения при наведении */
+            transition: filter 0.3s ease-in-out; /* Необязательно: плавный переход эффекта */
+        }
+        .star:hover{
+            filter: drop-shadow(0 0 30px rgba(250, 220, 100, 1)); /* Настройка свечения при наведении */
+        }
+        .rocet{
+            width: 8%;
+            margin-right: 25%;
+            filter: drop-shadow(0 0 20px rgba(3, 232, 251, 0.6)); /* Настройка свечения при наведении */
+            transition: filter 0.3s ease-in-out; /* Необязательно: плавный переход эффекта */
+        }
+        .rocet:hover{
+            filter: drop-shadow(0 0 30px rgba(3, 232, 251, 1)); /* Настройка свечения при наведении */
+        }
+        .mess{
+            width: 4.6%;
+            margin-left: 4%;
+            filter: drop-shadow(0 0 20px rgba(3, 232, 251, 0.6)); /* Настройка свечения при наведении */
+            transition: filter 0.3s ease-in-out; /* Необязательно: плавный переход эффекта */
+        }
+        .mess:hover{
+            filter: drop-shadow(0 0 30px rgba(3, 232, 251, 1)); /* Настройка свечения при наведении */
+        }
+        .profil{
+            width: 7%;
+            margin-left: 25%;
+            filter: drop-shadow(0 0 20px rgba(235, 67, 222, 0.6)); /* Настройка свечения при наведении */
+            transition: filter 0.3s ease-in-out; /* Необязательно: плавный переход эффекта */
+        }
+        .profil:hover{
+            filter: drop-shadow(0 0 30px rgba(235, 67, 222, 1)); /* Настройка свечения при наведении */
+        }
+        .planetss{
+            width: 5%;
+            margin-left: 4%;
+            filter: drop-shadow(0 0 20px rgba(3, 232, 251, 0.6)); /* Настройка свечения при наведении */
+            transition: filter 0.3s ease-in-out; /* Необязательно: плавный переход эффекта */
+        }
+        .planetss:hover{
+            filter: drop-shadow(0 0 30px rgba(3, 232, 251, 1)); /* Настройка свечения при наведении */
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <img src="logos.png" alt="Логотип" class="logo" style="vertical-align: middle;">
+    <h1 style="text-shadow: 0 0 30px rgba(112, 12, 98, 0.8);">FunSpace</h1>
+    <img src="setti.png" alt="Настройки" class="setting" style="vertical-align: middle;">
+</div>
+
+
+
+<div class="footer">
+    <img src="rocet.png" alt="Ракета" class="rocet" style="vertical-align: middle;">
+    <img src="mess.png" alt="Сообщение" class="mess" style="vertical-align: middle;">
+    <img src="planetss.png" alt="Планеты" class="planetss" style="vertical-align: middle;">
+    <img src="star.png" alt="Звезда" class="star" style="vertical-align: middle;">
+    <img src="profil.png" alt="Профиль" class="profil" style="vertical-align: middle;">
+
+</div>
+
+
+</body>
+</html>
